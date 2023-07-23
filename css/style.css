@@ -217,7 +217,7 @@ header {
   color: var(--main-color);
 }
 .fixed-nav .nav-header li a {
-  color: var(--main-color);
+  color: var(--sec-color);
  
 }
 .fixed-nav .nav-header li a:hover {
@@ -1144,6 +1144,10 @@ html[dir="ltr"] .about-paragraph{
   justify-content: center;
   margin-bottom: 35px;
 }
+.date-comment-view li i{
+  font-size: 16px;
+  margin-inline-end: 2px;
+}
 .date-comment-view li{
   color: rgb(128, 128, 128);
   font-size: 14px;
@@ -1240,7 +1244,7 @@ html[dir="ltr"] .about-paragraph{
   margin-inline-end: 10px;
 }
 .comment-date{
-  font-size: 10px;
+  font-size: 12px;
   color: rgb(128, 128, 128);
 }
 .comment-date:before{
@@ -1266,10 +1270,11 @@ margin: 6px auto 59px;
 color: #fff;
 font-size: 12px;
 font-family: "Bahij_TheSansArabic-Bold";
-
+transition: 0.5s;
 }
 .more-comments-btn:hover{
   color: #fff;
+  background-color: var(--sec-color);
 }
 .comment-block:not(:last-of-type){
   border-bottom: 1px solid rgb(229, 232, 237);
@@ -1351,7 +1356,10 @@ font-family: "Bahij_TheSansArabic-Bold";
   justify-content: center;
   font-size: 17px;
   font-family: "Bahij_TheSansArabic-Bold";
-  
+  transition: 0.5s;
+}
+.send-btn:hover{
+  background-color: var(--sec-color);
 }
 .send-btn:focus{
   outline: none;
@@ -1640,8 +1648,13 @@ html[dir="ltr"] .newsletter-submit-icon {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding-top: 50px;
+  position: relative;
+}
+.developed{
+  position: absolute;
+  inset-inline-end: 0;
 }
 .copy-right {
   display: -webkit-box;
@@ -1728,6 +1741,12 @@ html[dir="rtl"] .footer-accordion.active:after {
   .badge-logo{
     max-width: 45%;
   }
+  .logo{
+    max-width: 50px;
+  }
+  .developed{
+    position: relative;
+  }
   .navgition {
     display: block;
     position: fixed;
@@ -1781,7 +1800,7 @@ html[dir="rtl"] .footer-accordion.active:after {
 /*                                 arrow-top                           */
 .arrow-top {
   position: fixed;
-  bottom: 75px;
+  bottom: 20px;
   inset-inline-start: 21px;
   display: none;
   z-index: 10;
@@ -1892,7 +1911,7 @@ html[dir="rtl"] .footer-accordion.active:after {
     height: 45px;
   }
   .past-prev-post a{
-    font-size: 12px;
+    font-size: 14px;
   }
   .past-prev-post a i{
     font-size: 18px;
