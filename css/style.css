@@ -1124,6 +1124,242 @@ html[dir="ltr"] .about-paragraph{
 
 /*                             end news-section                           */
 
+/*                               post                                      */
+.post-content{
+  max-width: 946px;
+  margin:0 auto;
+}
+.post-img{
+  margin-bottom: 38px;
+}
+.post-image{
+  width: 100%;
+}
+.date-comment-view{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 35px;
+}
+.date-comment-view li{
+  color: rgb(128, 128, 128);
+  font-size: 14px;
+  margin-inline-end: 24px;
+  display: flex;
+  align-items: center;
+}
+.date-comment-view li:last-child{
+  margin-inline-end: 0;
+}
+.post-paragraph{
+  margin: 0 0 20px;
+  font-size: 16px;
+  color: var(--sec-color);
+  line-height: 2.25 ;
+  text-align: start;
+}
+.social-media{
+  list-style:none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+ margin-top: 40px;
+ margin-bottom: 48px;
+}
+.join{
+  color: rgb(21, 60, 110);
+  font-size: 16px;
+  font-family: "Bahij_TheSansArabic-Bold";
+  margin-inline-end: 16px;
+}
+.past-prev-post{
+  border-top: 1px solid rgb(229, 232, 237) ;
+  border-bottom: 1px solid rgb(229, 232, 237) ;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28px 0;
+  margin-bottom: 77px;
+}
+.past-prev-post a{
+  color: rgb(128, 128, 128) ;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  font-family: "Bahij_TheSansArabic-SemiBold";
+}
+.past-prev-post a i{
+  font-size: 24px;
+  margin-inline-end: 24px;
+}
+.next i{
+  margin-inline-end: 0 !important;
+  margin-inline-start: 24px;
+}
+.related{
+  text-align: center;
+  margin: 0 0 40px;
+}
+.title-2{
+  color: var(--main-color);
+  text-transform: capitalize;
+  text-align: start;
+  margin: 0 0 21px;
+  font-size: 22px;
+  font-family: "Bahij_TheSansArabic-ExtraBold";
+}
+.comment-block{
+  display: flex;
+  align-items: center;
+ 
+  padding: 0 0 18px;
+  margin-bottom: 14px;
+}
+.person-img{
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  flex-shrink: 0;
+  margin-inline-end: 10px;
+}
+.name-and-date{
+  display: flex;
+  align-items: center;
+}
+.name{
+  text-transform: capitalize;
+  color: #000;
+  font-size: 16px;
+  font-family: "Bahij_TheSansArabic-Bold";
+  margin:0;
+  margin-inline-end: 10px;
+}
+.comment-date{
+  font-size: 10px;
+  color: rgb(128, 128, 128);
+}
+.comment-date:before{
+  content: " - ";
+}
+.comment-paragraph{
+  font-size: 14px;
+  color: rgb(102, 102, 102);
+  margin: 0;
+  padding: 0;
+  margin-top: 8px;
+  text-align: start;
+}
+.more-comments-btn{
+background-color: var(--main-color);
+width: 201px;
+height: 45px;
+border-radius: 22px;
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 6px auto 59px;
+color: #fff;
+font-size: 12px;
+font-family: "Bahij_TheSansArabic-Bold";
+
+}
+.more-comments-btn:hover{
+  color: #fff;
+}
+.comment-block:not(:last-of-type){
+  border-bottom: 1px solid rgb(229, 232, 237);
+}
+.note{
+  color: #000;
+  display: block;
+  margin: 0 0 42px;
+  text-align: start;
+  font-size: 14px;
+}
+.note:after{
+  content: "*";
+  color:#d5333b;
+}
+.inputs{
+  display: flex;
+  align-items: center;
+  gap:30px;
+  margin-bottom: 18px;
+}
+.comment-label{
+  color: #000;
+  font-size: 14px;
+  font-family: "Bahij_TheSansArabic-SemiBold";
+  margin: 0 0 10px;
+  text-transform: capitalize;
+  width: 100%;
+  text-align: start;
+}
+.comment-label:after{
+  content: "*";
+  color:#d5333b;
+}
+.input-field{
+  width: 554px;
+  height: 45px;
+  background-color: rgb(245, 245, 245);
+  display: flex;
+  padding: 0 15px;
+  border:2px solid transparent;
+  transition: 0.5s;
+  border-radius: 23px;
+  outline: none;
+}
+.input-field:focus{
+  border: 2px solid var(--main-color);
+  outline: none;
+}
+.message{
+  width: 100%;
+  height: 100px;
+  background-color: rgb(245, 245, 245);
+  border-radius: 23px;
+  padding: 15px;
+  outline: none;
+  border: 2px solid transparent;
+  transition: 0.5s;
+}
+.message:focus{
+  border: 2px solid var(--main-color);
+  outline: none;
+}
+.send{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 17px;
+}
+.send-btn{
+  background-color: var(--main-color);
+  color: #fff;
+  width: 140px;
+  height: 46px;
+  border-radius: 23px;
+  border: 0;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  font-family: "Bahij_TheSansArabic-Bold";
+  
+}
+.send-btn:focus{
+  outline: none;
+  border: 0;
+}
+
+/*                              end post                                    */
+
 /*                       breadcrumb-section                              */
 .breadcrumb-section {
   position: relative;
@@ -1133,7 +1369,9 @@ html[dir="ltr"] .about-paragraph{
   align-items: center;
 margin-top: 105px;
 padding: 40px 0;
+
 }
+
 
 
 
@@ -1595,7 +1833,9 @@ html[dir="rtl"] .footer-accordion.active:after {
     width: 290px;
     height: 180px;
   }
-
+  .input-field{
+    width: 450px;
+  }
 
   .vision-text-content {
     padding-inline-start: calc((100vw - 930px) / 2);
@@ -1621,6 +1861,48 @@ html[dir="rtl"] .footer-accordion.active:after {
   .fixed-nav .nav-header li a {
     color: var(--sec-color)
    
+  }
+  .inputs{
+    flex-wrap: wrap;
+    gap:15px;
+  }
+  .inputs div{
+    width: 100%;
+  }
+  .input-field{
+    width: 100%;
+  }
+  .post-img{
+    margin-bottom: 15px;
+  }
+  .date-comment-view{
+    margin-bottom: 20px;
+  }
+  .post-paragraph{
+    text-align: justify;
+  }
+  .social-media{
+    flex-wrap: wrap;
+  }
+  .join{
+    margin-bottom: 10px;
+  }
+  .send-btn{
+    font-size: 15px;
+    height: 45px;
+  }
+  .past-prev-post a{
+    font-size: 12px;
+  }
+  .past-prev-post a i{
+    font-size: 18px;
+    margin-inline-end: 10px;
+  }
+  .next i{
+    margin-inline-start: 10px;
+  }
+  .past-prev-post{
+    margin-bottom: 40px;
   }
   .news-grid{
     padding: 50px 0;
