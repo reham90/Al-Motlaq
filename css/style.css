@@ -363,7 +363,7 @@ html[dir="ltr"] .first-level-link:after {
   display: none;
 }
 .inner-nav .menu-link{
-  color: var(--main-color);
+  color: var(--sec-color);
  }
 
 /*                          header section                     */
@@ -382,6 +382,7 @@ html[dir="ltr"] .first-level-link:after {
 .main-slider-image{
   width: 100%;
   height: 100vh;
+  object-fit: cover;
 }
 .main-slider-img-cover {
   position: absolute;
@@ -1145,8 +1146,8 @@ html[dir="ltr"] .about-paragraph{
   margin-bottom: 35px;
 }
 .date-comment-view li i{
-  font-size: 16px;
-  margin-inline-end: 2px;
+  font-size: 20px;
+  margin-inline-end: 8px;
 }
 .date-comment-view li{
   color: rgb(128, 128, 128);
